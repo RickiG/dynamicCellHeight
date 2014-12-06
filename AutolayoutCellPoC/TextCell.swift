@@ -8,17 +8,30 @@
 
 import UIKit
 
-class BasicCell: UITableViewCell {
+class TextCell: UITableViewCell, UpdateableCell {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subTitleLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.contentView.layoutIfNeeded()
+        updatePreferredLayoutSizes()
+    }
+    
+    func updatePreferredLayoutSizes() {
+        titleLabel.preferredMaxLayoutWidth = CGRectGetWidth(titleLabel.frame)
+        subTitleLabel.preferredMaxLayoutWidth = CGRectGetWidth(subTitleLabel.frame)
     }
 
+    func update(data: AnyObject) {
+        if let d = data as? CellTextData {
+            titleLabel.text = d.title
+            subTitleLabel.text = d.subTitle
+        }
+    }
 }
