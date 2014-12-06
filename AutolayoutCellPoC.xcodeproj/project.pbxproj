@@ -11,6 +11,8 @@
 		9D1F58511A333FCD00073690 /* DynamicCellSizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F584F1A333FCD00073690 /* DynamicCellSizer.swift */; };
 		9D1F58531A337C2800073690 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F58521A337C2800073690 /* ImageCell.swift */; };
 		9D1F58541A337C2800073690 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F58521A337C2800073690 /* ImageCell.swift */; };
+		9D1F58561A339C9600073690 /* SizeableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F58551A339C9600073690 /* SizeableTableViewCell.swift */; };
+		9D1F58571A339C9600073690 /* SizeableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F58551A339C9600073690 /* SizeableTableViewCell.swift */; };
 		9D5966221A321D1600649E42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5966211A321D1600649E42 /* AppDelegate.swift */; };
 		9D5966241A321D1600649E42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5966231A321D1600649E42 /* ViewController.swift */; };
 		9D5966271A321D1600649E42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5966251A321D1600649E42 /* Main.storyboard */; };
@@ -38,6 +40,7 @@
 /* Begin PBXFileReference section */
 		9D1F584F1A333FCD00073690 /* DynamicCellSizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicCellSizer.swift; sourceTree = "<group>"; };
 		9D1F58521A337C2800073690 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		9D1F58551A339C9600073690 /* SizeableTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeableTableViewCell.swift; sourceTree = "<group>"; };
 		9D59661C1A321D1600649E42 /* AutolayoutCellPoC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutolayoutCellPoC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5966201A321D1600649E42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D5966211A321D1600649E42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +106,7 @@
 				9D5966471A32303D00649E42 /* TextCell.swift */,
 				9D1F584F1A333FCD00073690 /* DynamicCellSizer.swift */,
 				9D1F58521A337C2800073690 /* ImageCell.swift */,
+				9D1F58551A339C9600073690 /* SizeableTableViewCell.swift */,
 			);
 			path = AutolayoutCellPoC;
 			sourceTree = "<group>";
@@ -232,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D1F58561A339C9600073690 /* SizeableTableViewCell.swift in Sources */,
 				9D5966481A32303D00649E42 /* TextCell.swift in Sources */,
 				9D5966421A321E1C00649E42 /* TableViewData.swift in Sources */,
 				9D5966241A321D1600649E42 /* ViewController.swift in Sources */,
@@ -248,6 +253,7 @@
 			files = (
 				9D1F58511A333FCD00073690 /* DynamicCellSizer.swift in Sources */,
 				9D5966491A32303D00649E42 /* TextCell.swift in Sources */,
+				9D1F58571A339C9600073690 /* SizeableTableViewCell.swift in Sources */,
 				9D5966461A32219700649E42 /* RandomNumbers.swift in Sources */,
 				9D5966381A321D1600649E42 /* AutolayoutCellPoCTests.swift in Sources */,
 				9D5966431A321E1C00649E42 /* TableViewData.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TextCell: UITableViewCell, UpdateableCell {
+class TextCell: SizeableTableViewCell, SizeableCell, UpdateableCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subTitleLabel: UILabel!
@@ -23,6 +23,11 @@ class TextCell: UITableViewCell, UpdateableCell {
         updatePreferredLayoutSizes()
     }
     
+    /*
+    Method : updatePreferredLayoutSizes()
+    The preferredMaxLayoutWidth must be reset
+    on each layout for the dynamic sizing to work
+    */
     func updatePreferredLayoutSizes() {
         titleLabel.preferredMaxLayoutWidth = CGRectGetWidth(titleLabel.frame)
         subTitleLabel.preferredMaxLayoutWidth = CGRectGetWidth(subTitleLabel.frame)
