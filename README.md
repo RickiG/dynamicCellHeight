@@ -2,8 +2,7 @@ dynamicCellHeight
 =================
 
 Example of dynamic sizing of tableView cells with autolayout
-[It's Herbert!](screen-shot.png)
-
+![It's Herbert!](screen-shot.png)
 
 ### Usage:
 
