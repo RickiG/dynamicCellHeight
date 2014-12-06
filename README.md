@@ -10,7 +10,12 @@ Make sure the cell classes you want to size dynamically conforms to the Sizeable
         dynamicCellSizer = DynamicCellSizer(tableView: tableView)
         dynamicCellSizer?.addSizingCellIdentifier("TextCellIdentifier")
         dynamicCellSizer?.addSizingCellIdentifier("ImageCellIdentifier")
-        
+
+The dynamicCellSizer keeps a reference to each of the type of cells added, these are never displayed
+in the tableView. Instead the cell is configured with data for the corrosponding indexPath, forced to layout with 
+sizingCell.contentView.systemLayoutSizeFittingSize(UILayoutFittingCompressedSize)
+the height is then retured for the actual cell in the tableView
+
   Use the dynamicCellSizer as such:
   
       func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
